@@ -1,28 +1,28 @@
 package domain;
 
 public class Animal {
-
     protected String name;
+    protected int age;
 
-    protected int weight;
-
-    public Animal() {
-        name="generic animal";
-        weight=25;
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public void eat() {
-        System.out.println("Animal eating...");
+        System.out.println(name + " їсть.");
     }
 
-    public void speak() {
-        System.out.println("Animal speaking...");
+    public void sleep() {
+        System.out.println(name + " спить.");
     }
 
-    @Override
-    public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
+    public void makeSound() {
+        System.out.println(name + " видає звук.");
     }
 
- 
+    public void move() {
+        System.out.println(name + " рухається.");
+    }
 }
+
